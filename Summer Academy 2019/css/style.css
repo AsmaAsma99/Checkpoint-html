@@ -1,0 +1,105 @@
+*{ 
+    margin: 0%;
+    padding: 0%;
+}
+body { 
+    margin-bottom: 50px;
+    
+    background-image:
+
+    Linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+    
+    Linear-gradient(127deg, black, black 70.71%),
+    
+    Linear-gradient(336deg, rgba(79, 79, 168, 0.8), rgba(0,0,255,0) 70.71%);
+    background-repeat: no-repeat;
+}
+.imageh {
+    height: 100%;
+    width: 100%;
+}
+.logo {
+    height: 50px;
+    width: 50px;
+    padding: 8px;
+    border: 8px;
+}
+.entete{
+    display: flex;
+    width: 100%;
+}
+.pages {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+.pages a {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-decoration: none;
+}
+.pages a:hover {
+    color: red; 
+}
+.cover {
+    width: 100%;
+    height: 500px;
+    background-image: url(../res/webdev3.png);
+    background-size: cover;
+    background-position: center;  
+    -webkit-box-shadow: 13px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 13px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 13px 10px 5px 0px rgba(0,0,0,0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: 50px;
+    text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+    
+}
+label {
+    color: aliceblue;
+    font-size: 20px;
+}
+.submit {
+    background-color: cornflowerblue;
+    height: 30px;
+    width: 100px;
+}
+input {
+    height: 30px;
+    width: 300px;
+}
+.feedback  {
+    color: aliceblue;
+}
+.feedbackarea {
+    margin: 20px;
+}
+.pictures {
+    width: 25% ;
+    margin: 20px;
+    margin-left: 3px;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+.pictures1 {
+    width: 25% ;
+    margin: 20px;
+    margin-left: 45px;
+    margin-right: 31px;
+    margin-top: 50px;
+}
+.pictures:hover {
+    opacity: 0.5;
+}
+.viewmore {
+    color: aliceblue;
+}
+.cou {
+    color: aliceblue;
+    font-size: 50px;
+}
