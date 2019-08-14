@@ -35,24 +35,25 @@
         <img src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel8.png" class="pictures">
         <div class="content">
             <h1 class="feedback">Feedback</h1>
-            <button>B</button>
-            <button>I</button>
-            <button>underline</button>
-            <select>
-                <option>20PX</option>
-                <option>30PX</option>
-                <option>40PX</option>
+            <button id="bold" onclick="bold()">B</button>
+            <button id="italic" onclick="Italic()">I</button>
+            <button id="underline" onclick="Underlinetext()">underline</button>
+            <select id="size" onchange="changeSize()">
+                <option value="20px" >20PX</option>
+                <option value="30px">30PX</option>
+                <option value="40px">40PX</option>
             </select>
-            <select>
+            <select id="police" onchange="changePolice()">
                 <option>Arial</option>
                 <option>Vendana</option>
                 <option>Geneva</option>
             </select>
             <form>
-                <textarea cols="40" rows="5" class="feedbackarea"></textarea>
+                <textarea cols="40" rows="5" class="feedbackarea" id="textarea"></textarea>
             </form>
         </div>
         
     </center>
     </body>
+    <script src="js/main.js"></script>
 </html>
