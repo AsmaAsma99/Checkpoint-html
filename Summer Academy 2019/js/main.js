@@ -30,3 +30,10 @@ function changeSize() {
 function changePolice() {
     x.style.fontFamily=z.value;
 }
+
+$("document").ready (function(){
+    
+    $(".pictures").parent(".course").hover(function(){
+        $(this).find(".viewmore").toggle();
+    })
+})

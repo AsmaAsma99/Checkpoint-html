@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <head>
         <link rel="stylesheet" href="css/style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 </head>
 <html>
     <body>
@@ -23,16 +26,56 @@
             <h1>Courses</h1> 
          </div>
 <center>
-    <DIV></DIV>
-        <img src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel.png" class="pictures">
-        <img src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel1.png" class="pictures">
-        <img src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel2.png" class="pictures">
-        <img src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel3.png" class="pictures">
-        <img src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel4.png" class="pictures">
-        <img src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel5.png" class="pictures">
-        <img src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel6.png" class="pictures">
-        <img src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel7.png" class="pictures">
-        <img src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel8.png" class="pictures">
+    <div>
+        <div class="courses">
+        <div class="course">    
+            <img  src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel.png" class="pictures">
+            <button class="viewmore"><p><a href="#ex1" rel="modal:open">view more</a></p></button>    
+        </div>
+        <div class="course">  
+            <img src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel1.png" class="pictures">
+            <button class="viewmore"><p><a href="#ex1" rel="modal:open">view more</a></p></button> 
+        </div> 
+        <div class="course">    
+            <img src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel2.png" class="pictures">
+            <button class="viewmore"><p><a href="#ex1" rel="modal:open">view more</a></p></button>
+        </div>
+        </div>
+
+        <div class="courses">
+        <div class="course">
+            <img src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel3.png" class="pictures">
+            <button class="viewmore"><p><a href="#ex1" rel="modal:open">view more</a></p></button>
+        </div> 
+        <div class="course">
+            <img src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel4.png" class="pictures">
+            <button class="viewmore"><p><a href="#ex1" rel="modal:open">view more</a></p></button>
+        </div> 
+        <div class="course">
+            <img src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel5.png" class="pictures">
+            <button class="viewmore"><p><a href="#ex1" rel="modal:open">view more</a></p></button>
+        </div> 
+        </div>
+
+        <div class="courses">
+        <div class="course">
+            <img src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel6.png" class="pictures">
+            <button class="viewmore"><p><a href="#ex1" rel="modal:open">view more</a></p></button>
+        </div> 
+        <div class="course">
+            <img src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel7.png" class="pictures">
+            <button class="viewmore"><p><a href="#ex1" rel="modal:open">view more</a></p></button>
+        </div> 
+        <div class="course">
+            <img src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel8.png" class="pictures">    
+            <button class="viewmore"><p><a href="#ex1" rel="modal:open">view more</a></p></button>
+        </div> 
+        </div>
+        
+        
+        
+        
+        
         <div class="content">
             <h1 class="feedback">Feedback</h1>
             <button id="bold" onclick="bold()">B</button>
@@ -52,6 +95,14 @@
                 <textarea cols="40" rows="5" class="feedbackarea" id="textarea"></textarea>
             </form>
         </div>
+        <div id="ex1" class="modal">
+                <p>This is GoMyCode track. 
+                    <br>
+                Each track has its own goal.
+                    <br>
+                By adopting this track, you chose your own goal.</p>
+        </div>
+
         
     </center>
     </body>
