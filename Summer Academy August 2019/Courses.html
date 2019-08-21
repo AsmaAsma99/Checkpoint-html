@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+       <link rel="stylesheet" href="css/style.css">
+</head>
+<html>
+    <body>
+            <nav class="navbar navbar-expand-lg asmabackground">
+                    <a class="navbar-brand" href="#"><img src="https://gomycode.tn/images/section2GMCLogo.png" width="30" height="30"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse asma" id="navbarNav"> 
+                          <a class="nav-link" href="index.html">Home </a>
+                          <a class="nav-link" href="Courses.html">Courses</a>
+                          <a class="nav-link" href="Contact.html">Contact</a>
+                    </div>
+                  </nav>
+    
+         <div class="cover">
+            <h1>Courses</h1> 
+         </div>
+<center>
+    <div>
+        <div class="courses row" >
+        <div class="course col-lg-4 col-md-6 col-ms-12">    
+            <img  src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel.png" class="pictures">
+            <button class="viewmore"><p><a href="#ex1" rel="modal:open">view more</a></p></button>    
+        </div>
+        <div class="course col-lg-4 col-md-6 col-ms-12">  
+            <img src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel1.png" class="pictures">
+            <button class="viewmore"><p><a href="#ex1" rel="modal:open">view more</a></p></button> 
+        </div> 
+        <div class="course col-lg-4 col-md-6 col-ms-12">    
+            <img src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel2.png" class="pictures">
+            <button class="viewmore"><p><a href="#ex1" rel="modal:open">view more</a></p></button>
+        </div>
+        </div>
+
+        <div class="courses row">
+        <div class="course col-lg-4 col-md-6 col-ms-12">
+            <img src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel3.png" class="pictures">
+            <button class="viewmore"><p><a href="#ex1" rel="modal:open">view more</a></p></button>
+        </div> 
+        <div class="course col-lg-4 col-md-6 col-ms-12">
+            <img src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel4.png" class="pictures">
+            <button class="viewmore"><p><a href="#ex1" rel="modal:open">view more</a></p></button>
+        </div> 
+        <div class="course col-lg-4 col-md-6 col-ms-12">
+            <img src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel5.png" class="pictures">
+            <button class="viewmore"><p><a href="#ex1" rel="modal:open">view more</a></p></button>
+        </div>
+        </div>
+ 
+        <div class="courses row">
+        <div class="course col-lg-4 col-md-6 col-ms-12">
+            <img src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel6.png" class="pictures">
+            <button class="viewmore"><p><a href="#ex1" rel="modal:open">view more</a></p></button>
+        </div> 
+        <div class="course col-lg-4 col-md-6 col-ms-12">
+            <img src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel7.png" class="pictures">
+            <button class="viewmore"><p><a href="#ex1" rel="modal:open">view more</a></p></button>
+        </div> 
+        <div class="course col-lg-4 col-md-6 col-ms-12">
+            <img src="https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel8.png" class="pictures">    
+            <button class="viewmore"><a href="#ex1" rel="modal:open">view more</a></button>
+        </div> 
+        </div>
+        
+        
+        
+        
+        
+        <div class="content">
+            <h1 class="feedback">Feedback</h1>
+            <button id="bold" onclick="bold()">B</button>
+            <button id="italic" onclick="Italic()">I</button>
+            <button id="underline" onclick="Underlinetext()">underline</button>
+            <select id="size" onchange="changeSize()">
+                <option value="20px" >20PX</option>
+                <option value="30px">30PX</option>
+                <option value="40px">40PX</option>
+            </select>
+            <select id="police" onchange="changePolice()">
+                <option>Arial</option>
+                <option>Vendana</option>
+                <option>Geneva</option>
+            </select>
+            <form>
+                <textarea cols="40" rows="5" class="feedbackarea" id="textarea"></textarea>
+            </form>
+        </div>
+
+        
+
+        
+    </center>
+    <div id="ex1" class="modal">
+                <p>This is GoMyCode track. 
+                    <br>
+                Each track has its own goal.
+                    <br>
+                By adopting this track, you chose your own goal.</p>
+        </div>
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</html>
